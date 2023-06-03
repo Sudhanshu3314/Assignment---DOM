@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyPress</title>
+    <style>
+        input {
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="type" name="sud" placeholder="Type something...">
+        <h1 id="display"></h1>
+        <br>
+    </div>
+    <script>
+        let inputBox = document.getElementById('type')
+        let display = document.getElementById('display')
+
+        inputBox.addEventListener('keypress', function (event) {
+            display.innerText = "You have Pressed " + event.key
+        })
+    </script>
+</body>
+
+</html>

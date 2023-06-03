@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        .box {
+            padding: 10px 20px;
+            margin: auto;
+            border: 2px solid black;
+        }
+
+        #box {
+            padding: 2px 10px;
+            margin: 10px;
+            display: inline-block;
+            border: 2px solid black;
+            font-size: 30px;
+            width: 70px;
+        }
+
+        .box div {
+            display: block;
+            text-align: center;
+        }
+
+        input[type='button'] {
+            font-size: 25px;
+            margin: 2px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>
+            <label> <input type="button" value="Decrement By 1"
+                    onclick="parseInt(document.getElementById('box').value--)"></label>
+            <input type="text" readonly value="0" id="box">
+            <label> <input type="button" value="Increment By 1"
+                    onclick="parseInt(document.getElementById('box').value++)"></label>
+        </div>
+        <br> <br>
+        <div>
+            <label> <input type="button" value="Reset Value"
+                    onclick=" document.getElementById('box').value = document.getElementById('box').value - document.getElementById('box').value  "></label>
+        </div>
+    </div>
+
+</body>
+
+</html>
